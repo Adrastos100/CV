@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>To Contact me:</h1>
+    <ul>
+        <li>E-mail: <a href="mailto:mm21b014@smail.iitm.ac.in">mm21b014@smail.iitm.ac.in</a></li>
+        <!--href="mailto:(email address)" is used to direct the user to directly go to the email sending window-->
+        <li>Ph no. <a href="tel:+919667092340">+91 96670 92340</a></li>
+        <!--href="tel:(ph no with country code) is used, some browsers open skype or other calling apps. in my case it sent a call request to my number"-->
+    </ul>
+    <form action="mailto:mm21b014@smail.iitm.ac.in" method="post" enctype="text/plain"><!--method="post" is the attribute which
+    ensures that all the data taken in this form is published in the action of the form-->
+        <label>Your name: </label>
+        <input type="text" name="name" placeholder="your name"><!--input tag does not require any closing tag-->
+        <br>
+        <label>Your email: </label>
+        <input type="email" placehoder="example@gmail.com" name="email">
+        <br>
+        <label>Your message: </label><br>
+        <textarea name="message" cols="30" rows="10" placeholder="tell me about yourself..."></textarea><br>
+        <input type="submit"><br>
+        <input type="reset" value="click here to reset">
+        <!--only the values in input tags with their name="(something)" is being published in the form action-->
+    </form>
+</body>
+</html>
